@@ -1,0 +1,148 @@
+html, body {
+    width: 400px;
+  }
+
+  body {
+    color:black;
+    border-style: solid;
+    border-color: blue;
+    background-color: yellow;
+    border-width: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font: 15px "Verdana";
+  }
+  
+  span{
+    font-size: 15px;
+    color: blue;
+  }
+
+  span:hover:not(.selectedType){
+    color: rgb(234, 90, 247);
+    font-weight: bold;
+  }
+
+  .selectedType{
+    font-weight: bold;
+    display: grid;
+    background-color: rgb(234, 90, 247);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
+    animation-duration: 0.5s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+  }
+
+  @keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0.2; }
+    100% { opacity:1; }
+  }
+
+  #imgSelected{
+    width:75%;
+    height:140px;
+    border-radius: 10px;
+    border: 3px solid;
+    color: blue;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .state, .cliquez {
+    color: rgb(234, 90, 247);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 blue,
+    -1px 1px 0 blue,
+    1px -1px 0 blue,
+    -1px -1px 0 blue,
+    0px 1px 0 blue,
+    0px -1px 0 blue,
+    -1px 0px 0 blue,
+    1px 0px 0 blue,
+    2px 2px 0 blue,
+    -2px 2px 0 blue,
+    2px -2px 0 blue,
+    -2px -2px 0 blue,
+    0px 2px 0 blue,
+    0px -2px 0 blue,
+    -2px 0px 0 blue,
+    2px 0px 0 blue,
+    1px 2px 0 blue,
+    -1px 2px 0 blue,
+    1px -2px 0 blue,
+    -1px -2px 0 blue,
+    2px 1px 0 blue,
+    -2px 1px 0 blue,
+    2px -1px 0 blue,
+    -2px -1px 0 blue;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+  }
+  
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(87, 83, 83);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+input:checked + .slider {
+  background-color: rgb(234, 90, 247);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(234, 90, 247);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+
+  <!-- Rectangular switch -->
+  <center>
+    <br>
+    <div class="state">
+      Mode blagues désactivé
+    </div><br>
+    <label class="switch">
+      <input id="blagueActif" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <br><br>
+  </center>
+
+  <div class="choice">
+    <center>
+      <div><b>Sélectionnez un type de blagues :</b><br><br></div>
+      <span id="blagueDev">👨‍💻 Humour de développeur 👨‍💻</span><br>
+      <span id="blagueNormales">&#129313; Blagues normales &#129313;</span><br>
+      <span id="blagueBeaufs">&#129400; Humour de beaufs &#129400;</span><br>
+      <span id="blagueBlondes">👱‍♀️ Blagues blondes 👱‍♀️</span><br>
+      <span id="blague18Plus">&#128286; Humour 18+ &#128286;</span><br><br>
+      <img class="hidden" id="imgSelected" src="">
+    </center>
+  </div>
+  <div class="cliquez hidden">
+    <center>
+      Maintenant <img src="cliquez.gif" style="height:50px">
+    </center>
+  </div>
+  <center>
+    <div>Powered by <a href="https://www.blagues-api.fr/">https://www.blagues-api.fr/</a></div><br>
+  </center>
+
+  <script src="popup.js"></script>
+
+</body>
+
+</html>
