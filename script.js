@@ -19,8 +19,6 @@ async function blague() {
     response = xmlHttp.response;
     parseJson = JSON.parse(response);
 
-
-
     direTexte(parseJson.joke);
     direTexte(parseJson.answer);
     direTexte("hem déaire lol PétéDéaire");

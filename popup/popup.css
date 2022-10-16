@@ -1,16 +1,16 @@
 html, body {
-    width: 400px;
+    width: 500px;
   }
 
   body {
     color:black;
     border-style: solid;
     border-color: blue;
-    background-color: yellow;
+    background-color: rgb(227, 59, 243);
     border-width: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font: 15px "Verdana";
+    border-radius: 5px;
+    font-family: 'Jua';
+    font-size: 17px;
   }
   
   span{
@@ -19,14 +19,14 @@ html, body {
   }
 
   span:hover:not(.selectedType){
-    color: rgb(234, 90, 247);
+    color: rgb(225, 255, 33);
     font-weight: bold;
   }
 
   .selectedType{
     font-weight: bold;
     display: grid;
-    background-color: rgb(234, 90, 247);
+    background-color: rgb(225, 255, 33);
     border-top: 2px solid;
     border-bottom: 2px solid;
 
@@ -107,7 +107,7 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(87, 83, 83);
+  background-color: rgb(113, 113, 113);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -125,11 +125,11 @@ html, body {
 }
 
 input:checked + .slider {
-  background-color: rgb(234, 90, 247);
+  background-color: blue;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(234, 90, 247);
+  box-shadow: 0 0 1px blue;
 }
 
 input:checked + .slider:before {
