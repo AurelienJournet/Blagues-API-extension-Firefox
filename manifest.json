@@ -1,7 +1,6 @@
 {
 	"permissions": [
-		"notifications",
-		"*://*/*"
+		"notifications"
 	  ],
 	"browser_specific_settings": {
 		"gecko": {
@@ -13,7 +12,7 @@
 	"description": "Des blagues de https://www.blagues-api.fr en diffusion continue lors de votre navigation",
 	"manifest_version": 2,
 	"name": "Blagues API",
-	"version": "1.1.0.0",
+	"version": "1.1.0.1",
 	"homepage_url": "https://www.blagues-api.fr",
 	"icons": {
 			"48": "icons/blagues48.png"
